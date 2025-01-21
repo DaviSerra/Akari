@@ -1,6 +1,6 @@
 ## Projeto: Akari
 
-![image](https://github.com/user-attachments/assets/d3041e97-d3cd-4194-b80a-dbdd83185baf)
+![image](https://github.com/user-attachments/assets/158aad2b-6fa6-423a-9c19-95d35f9143d9)
 
 ### Descrição
 
