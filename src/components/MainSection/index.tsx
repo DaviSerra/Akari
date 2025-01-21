@@ -1,5 +1,7 @@
-import { MainSectionWrapper, LeftContent, CenterContent, RightContent, VerticalLine } from "./styles";
+import { MainSectionWrapper, LeftContent, CenterContent, RightContent, VerticalLine, ButtonContainer, LeftButton, RightButton } from "./styles";
 import woman from "../../assets/woman.png"
+import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
+import umbrellla from "../../assets/umbrella-phrase.png";
 
 const MainSection: React.FC = () => {
     return (
@@ -22,11 +24,23 @@ const MainSection: React.FC = () => {
             <VerticalLine />
 
             <RightContent>
-                <div className="vertical-text">
-                    傘の下世界は静かになる<br />
-                    空と海の奏で
-                </div>
+                <img
+                    className="umbrella-phrase"
+                    src={umbrellla}
+                    alt="Main Visual"
+                />
+                <div className="japanese-title-2">雅の光</div>
             </RightContent>
+
+            <ButtonContainer>
+                <LeftButton>
+                    <ArrowLeft size={24} weight="bold" />
+                </LeftButton>
+                <RightButton>
+                    <ArrowRight size={24} weight="bold" />
+                </RightButton>
+            </ButtonContainer>
+
         </MainSectionWrapper>
     );
 };

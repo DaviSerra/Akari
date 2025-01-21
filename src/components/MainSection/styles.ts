@@ -10,6 +10,7 @@ export const MainSectionWrapper = styled.section`
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  
 `;
 
 export const LeftContent = styled.div`
@@ -23,15 +24,15 @@ export const LeftContent = styled.div`
     position: relative;
     left: -38%;
     font-family: "Sawarabi Mincho", serif;
-    font-size: 8rem;
+    font-size: 10rem;
     color: ${(props) => props.theme["pink-400"]};
     opacity: 0.4;
   }
 
   .english-title {
     position: relative;
-    left: 9rem;
-    margin-top: 1rem;
+    right: 0.1rem;
+    bottom: 1rem;
     display: flex;
     line-height: 1;
     justify-content: end;
@@ -81,19 +82,69 @@ export const RightContent = styled.div`
   align-items: flex-end;
   padding: 2rem;
 
-  .vertical-text {
-    font-family: "Sans-serif";
-    font-size: 1rem;
-    color: #8b0000;
-    writing-mode: vertical-rl;
-    text-align: center;
-    margin-bottom: 2rem;
+  .umbrella-phrase {
+    position: relative;
+    right: 15rem;
+    bottom: 4rem;
+    width: 90%;
+    height: auto;
+    max-width: 100%;
   }
 
-  .decorative-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: #8b0000;
-    border-radius: 50%;
+
+  .japanese-title-2 {
+    position: fixed;
+    right: -3rem;
+    bottom: 2rem;
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 10rem;
+    color: ${(props) => props.theme["pink-400"]};
+    opacity: 0.4;
+  }
+
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: start;
+  position: fixed;
+  left: 5rem;
+  bottom: 3rem;
+`;
+
+export const Button = styled.button`
+  background-color: ${(props) => props.theme["pink-400"]};
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: ${(props) => props.theme["pink-500"]};
+  }
+`;
+
+export const LeftButton = styled(Button)`
+  border-radius: 20px 0 0 20px;
+  margin-right: 5px;
+
+  svg {
+    margin-right: 10px;
+  }
+`;
+
+export const RightButton = styled(Button)`
+  border-radius: 0 20px 20px 0;
+  margin-left: 5px;
+
+  svg {
+    margin-left: 10px;
   }
 `;

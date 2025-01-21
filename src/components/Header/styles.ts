@@ -38,7 +38,7 @@ export const Nav = styled.nav`
 
     li {
       font-family: "Sawarabi Gothic", serif;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       position: relative;
       cursor: pointer;
       color: ${(props) => props.theme["dark-900"]};
@@ -86,9 +86,10 @@ export const IconsWrapper = styled.div`
     color: ${(props) => props.theme["red-500"]};
     width: 2rem;
     height: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      color: ${(props) => props.theme["dark-900"]};
+      color: ${(props) => props.theme["pink-500"]};
     }
   }
 `;

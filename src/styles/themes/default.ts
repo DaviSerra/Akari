@@ -4,4 +4,5 @@ export const defaultTheme = {
   "red-500": "#A74C44",
   "blue-700": "#4B5E75",
   "pink-400": "#B29491",
+  "pink-500": "#8F6B6A",
 };
