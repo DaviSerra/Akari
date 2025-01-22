@@ -10,7 +10,6 @@ export const MainSectionWrapper = styled.section`
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
-  
 `;
 
 export const LeftContent = styled.div`
@@ -73,6 +72,10 @@ export const VerticalLine = styled.div`
   left: 65%;
   transform: translateX(-50%);
   z-index: 2;
+
+  @media (max-width: 1600px) {
+    height: 30rem;
+  }
 `;
 
 export const RightContent = styled.div`
@@ -84,24 +87,46 @@ export const RightContent = styled.div`
 
   .umbrella-phrase {
     position: relative;
-    right: 15rem;
-    bottom: 4rem;
-    width: 90%;
+    right: 18rem;
+    bottom: 8rem;
+    width: 75%;
     height: auto;
     max-width: 100%;
-  }
 
+    @media (max-width: 1600px) {
+      right: 13rem;
+      width: 55%;
+      bottom: 14rem;
+    }
+
+    @media (max-width: 1400px) {
+      right: 11rem;
+      width: 50%;
+      bottom: 21rem;
+    }
+  }
 
   .japanese-title-2 {
     position: fixed;
     right: -3rem;
     bottom: 2rem;
     font-family: "Sawarabi Mincho", serif;
-    font-size: 10rem;
+    font-size: 9rem;
     color: ${(props) => props.theme["pink-400"]};
     opacity: 0.4;
-  }
 
+    @media (max-width: 1600px) {
+      font-size: 8rem;
+    }
+
+    @media (max-width: 1400px) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 7rem;
+    }
+  }
 `;
 
 export const ButtonContainer = styled.div`

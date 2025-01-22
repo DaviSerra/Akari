@@ -69,12 +69,26 @@ export const Nav = styled.nav`
 export const RotatedNumber = styled.div`
   position: absolute;
   right: 15rem;
-  bottom: -10rem;
+  top: -8rem;
   font-size: 16.25rem;
   font-family: "Sawarabi Mincho", serif;
   color: ${(props) => props.theme["red-500"]};
   writing-mode: vertical-rl;
   z-index: 1;
+
+  @media (max-width: 1600px) {
+    font-size: 14.25rem;
+    position: absolute;
+    right: 10rem;
+    top: -7rem;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 12.25rem;
+    position: absolute;
+    right: 10rem;
+    top: -6rem;
+  }
 `;
 
 export const IconsWrapper = styled.div`
@@ -93,4 +107,3 @@ export const IconsWrapper = styled.div`
     }
   }
 `;
- 
