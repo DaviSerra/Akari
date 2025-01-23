@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const HeaderWrapper = styled.header`
   display: flex;
+  align-items: center;
+  justify-content: space-between; 
   padding: 1.5rem;
   position: relative;
 
@@ -39,20 +41,13 @@ export const Logo = styled.img`
 export const Nav = styled.nav`
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: start;
-  margin-top: 2rem;
+  justify-content: center; 
+  margin-bottom: 4rem;
 
   @media (max-width: 768px) {
+    margin-top: 1rem;
     width: 100%;
     justify-content: center;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
   }
 
   ul {
@@ -96,10 +91,11 @@ export const Nav = styled.nav`
 export const IconsWrapper = styled.div`
   display: flex;
   gap: 0.8rem;
-
+  align-items: center;
+  margin-bottom: 4rem;
+  
   svg {
     cursor: pointer;
-    margin-top: 2rem;
     color: ${(props) => props.theme["red-500"]};
     width: 1.8rem;
     height: 1.8rem;
@@ -113,6 +109,8 @@ export const IconsWrapper = styled.div`
   @media (max-width: 768px) {
     position: absolute;
     right: 1rem;
+    top: 1rem;
+
     svg {
       width: 1.5rem;
       height: 1.5rem;
@@ -129,7 +127,6 @@ export const RotatedNumber = styled.div`
   color: ${(props) => props.theme["red-500"]};
   writing-mode: vertical-rl;
   z-index: 1;
-
 
   @media (max-width: 1600px) {
     font-size: 14rem;
