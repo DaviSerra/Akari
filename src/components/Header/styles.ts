@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
-  justify-content: space-between; 
-  padding: 1.5rem;
+  justify-content: space-between;
   position: relative;
 
   @media (max-width: 768px) {
@@ -41,7 +40,7 @@ export const Logo = styled.img`
 export const Nav = styled.nav`
   flex: 1;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-bottom: 4rem;
 
   @media (max-width: 768px) {
@@ -93,7 +92,8 @@ export const IconsWrapper = styled.div`
   gap: 0.8rem;
   align-items: center;
   margin-bottom: 4rem;
-  
+  margin-right: 4rem;
+
   svg {
     cursor: pointer;
     color: ${(props) => props.theme["red-500"]};
@@ -108,7 +108,7 @@ export const IconsWrapper = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-    right: 1rem;
+    right: -2.5rem;
     top: 1rem;
 
     svg {
